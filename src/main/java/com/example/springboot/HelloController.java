@@ -11,8 +11,8 @@ public class HelloController {
 	@GetMapping("/")
 	public String index() {
 
-		string userId = "kcrismon";
-		string password = "KnownPassword1234!";
+		final String userId = "kcrismon";
+		final String password = "KnownPassword1234!";
 	
 		return "Greetings from Spring Boot!";
 	}
