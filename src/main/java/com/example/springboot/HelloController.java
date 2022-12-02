@@ -6,11 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-	private string userId = "kcrismon";
-	private string password = "KnownPassword1234!";
 	
+
 	@GetMapping("/")
 	public String index() {
+
+		string userId = "kcrismon";
+		string password = "KnownPassword1234!";
+	
 		return "Greetings from Spring Boot!";
 	}
 
